@@ -1,4 +1,4 @@
-**[Догонялки](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/catchUp)**
+##**[Догонялки](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/catchUp)**
 Догонялки между двумя потоками.
 Приложение, демонстрирующее динамическое изменение приоритетов двух потоков.
 
