@@ -1,19 +1,22 @@
 package ru.svs.thread.catchUp;
 
-
+/**
+ * Класс для динамического изменения приоритетов двух потоков.
+ */
 public class Player extends Thread {
     private String name;
     private int onePriority;
     private int twoPriority;
 
-    public Player (String name, int onePriority, int twoPriority){
+    public Player(String name, int onePriority, int twoPriority) {
         this.name = name;
         this.onePriority = onePriority;
         this.twoPriority = twoPriority;
 
     }
+
     public Player() {
-        this("Player",10,1);
+        this("Player", 10, 1);
     }
 
     public void run() {
@@ -30,7 +33,4 @@ public class Player extends Thread {
             }
         }
     }
-
-
-
 }
