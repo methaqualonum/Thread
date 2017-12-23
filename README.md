@@ -11,4 +11,4 @@
 ## **[Копирование файлов](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/copyFiles)**
 Приложение для копирования текстового файла с заданным именем в текстовый файл по указанному пути.
 
-## **[Совместное использование ресурсов] (https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/Resources)**
+## **[Совместное использование ресурсов](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/Resources)**
