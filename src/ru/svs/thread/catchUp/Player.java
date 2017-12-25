@@ -1,7 +1,7 @@
 package ru.svs.thread.catchUp;
 
 /**
- * Класс для динамического изменения приоритетов двух потоков.
+ * Класс, в котором выполяняются потоки и меняется их приоритет.
  */
 public class Player extends Thread {
     private String name;
