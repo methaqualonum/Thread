@@ -2,10 +2,14 @@ package ru.svs.thread.readThreads;
 
 import java.io.*;
 
-public class ReadFiles extends Thread{
+/**
+ * Класс для параллельного чтения данных из двух разных текстовых файлов и записи
+ * считанных данных в результирующий файл.
+ */
+
+public class ReadFiles extends Thread {
     private String adress;
     private static volatile BufferedWriter bufferedWriter;
-    //Конструктор
 
     public ReadFiles(String adress) {
         this.adress = adress;
@@ -19,10 +23,10 @@ public class ReadFiles extends Thread{
         oneThread.start();
         twoThread.start();
 
-        if(oneThread.isAlive()){
+        if (oneThread.isAlive()) {
             oneThread.join();
         }
-        if (twoThread.isAlive()){
+        if (twoThread.isAlive()) {
             twoThread.join();
         }
         bufferedWriter.close();
@@ -34,24 +38,26 @@ public class ReadFiles extends Thread{
      * Метод считывает строку и сохраняет в переменную n
      * до тех пор, пока файл не станет пустым
      */
-    public void run(){
+    public void run() {
         String n;
-        try(BufferedReader one = new BufferedReader(new FileReader(adress)))
-        {
-            while ((n = one.readLine())!=null){
-                write(n+"\n");
+        try (BufferedReader one = new BufferedReader(new FileReader(adress))) {
+            while ((n = one.readLine()) != null) {
+                write(n + "\n");
             }
 
-        } catch (IOException e){
+        } catch (IOException e) {
         }
 
     }
 
     /**
      * Метод записи строк в файл
-     * @param  n - строка
+     *
+     * @param n - строка
      */
-    public static synchronized void write(String n) throws IOException{
+    public static synchronized void write(String n) throws IOException {
         bufferedWriter.write(n);
     }
+
+
 }
