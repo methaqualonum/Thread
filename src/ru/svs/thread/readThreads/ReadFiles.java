@@ -33,11 +33,7 @@ public class ReadFiles extends Thread {
 
 
     }
-
-    /**
-     * Метод считывает строку и сохраняет в переменную n
-     * до тех пор, пока файл не станет пустым
-     */
+    
     public void run() {
         String n;
         try (BufferedReader one = new BufferedReader(new FileReader(adress))) {
