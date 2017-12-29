@@ -17,4 +17,7 @@
 ## **[Качаем музыку](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/DownloadMusic)**
 Проект для скачивания музыки по ссылке.
 
+## **[Качаем картинки](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/downloadPics)**
+Проект для скачивания картинок по ссылке.
+
 ## **[Запуск нескольких потоков (пример)](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/threadDemo)**
