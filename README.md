@@ -14,7 +14,7 @@
 ## **[Совместное использование ресурсов](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/Resources)**
 Проект, позволяющий выполнять инкремент переменной i двумя потоками.
 
-## **[Качаем музыку](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/downloadMusic)**
+## **[Качаем музыку](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/DownloadMusic)**
 Проект для скачивания музыки по ссылке.
 
 ## **[Запуск нескольких потоков (пример)](https://github.com/methaqualonum/Thread/tree/master/src/ru/svs/thread/threadDemo)**
